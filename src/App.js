@@ -4,6 +4,7 @@ import { useRef } from "react";
 function App() {
   window.addEventListener("message", (message) => {
     if (message.origin == "https://firstdomain.pages.dev/") {
+      console.log("malik", message.data);
       localStorage.setItem("firstDomainId", message.data);
     }
   });
