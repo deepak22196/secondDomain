@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 function App() {
   window.addEventListener("message", (message) => {
-    if ((message.origin = "https://firstdomain.pages.dev/")) {
+    if (message.origin == "https://firstdomain.pages.dev/") {
       localStorage.setItem("firstDomainId", message.data);
     }
   });
