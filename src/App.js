@@ -11,6 +11,8 @@ function App() {
       localStorage.setItem("firstDomainId", message.data);
     }
   });
+
+  console.log(localStorage.getItem(firstDomainId));
   return (
     <>
       <div>this page is listening for message</div>
