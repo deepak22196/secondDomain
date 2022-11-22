@@ -12,7 +12,7 @@ function App() {
     }
   });
 
-  console.log(localStorage.getItem(firstDomainId));
+  console.log(localStorage.getItem("firstDomainId"));
   return (
     <>
       <div>this page is listening for message</div>
